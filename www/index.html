@@ -1,96 +1,97 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js ui-mobile-rendering" lang="en">
 <head>
-    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta charset="utf-8">
-    <title>You' mom</title>
-    <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.css">
-    <link rel="stylesheet"  href="css/app.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.mobile-1.4.0.js"></script>
+  <title>You' Mom</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="components/jquery-mobile-bower/css/jquery.mobile-1.4.1.min.css">
+  <script src="components/requirejs/require.js"></script>
+    <script src="../../js/requirejs.config.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-<div data-role="page" class="" id="mainPage">
-    <div data-role="header" class="">
-        <img style="margin-left: 5px; margin-top: 5px;" height="40px" src="img/logo.png" alt="you' mom"/>
-        <a style="margin-top: 5px;" href="#settingsPage" id='settingsButton' class="ui-btn-right" data-role="button" data-icon="gear">Settings</a>
-        
-    </div>
-    <div data-role="content" class="">
-        <ul data-role="listview" data-split-icon="gear" data-split-theme="a" class="ui-listview">
-            <li class="ui-li-has-alt ui-li-has-thumb ui-first-child">
-                <a href="#showPage" class="ui-btn">
-                    <img src="img/profile.jpg">
-                    <h3>Empty Dishwasher</h3>
-                    <p>ASAP</p>
-                </a>
-                <a href="#purchase" data-rel="popup" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="delete ui-btn ui-btn-icon-notext ui-icon-check ui-btn-a"></a>
-            </li>
-            <li class="ui-li-has-alt ui-li-has-thumb">
-                <a href="#showPage" class="ui-btn">
-                    <img src="img/profile.jpg">
-                    <h3>Clean apartment</h3>
-                    <p>3 days left to deadline</p>
-                </a>
-                <a href="#purchase" data-rel="popup" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="delete ui-btn ui-btn-icon-notext ui-icon-check ui-btn-a"></a>
-            </li>
-            <li class="ui-li-has-alt ui-li-has-thumb">
-                <a href="#showPage" class="ui-btn">
-                    <img src="img/profile.jpg">
-                    <h3>Buy toiletpaper</h3>
-                    <p>ASAP</p>
-                </a>
-                <a href="#purchase" data-rel="popup" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="delete ui-btn ui-btn-icon-notext ui-icon-check ui-btn-a"></a>
-            </li>
-        </ul>
-        <div style="clear:both; margin-top: 30px;"></div>
-        <a  data-split-theme="a"  href="#addNewPage" class="ui-btn">Add new item</a>
-    </div>
-    <div id="confirm" class="ui-content" data-role="popup" data-theme="a">
-        <p id="question">Did you complete this task?</p>
-        <div class="ui-grid-a">
-            <div class="ui-block-a">
-                <a id="yes" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Yes</a>
-            </div>
-            <div class="ui-block-b">
-                <a id="cancel" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Cancel</a>
-            </div>
-        </div>
-    </div><!-- /popup -->
-</div>
-<div data-role="page" class="" id="settingsPage" data-add-back-btn="true" >
-    <div data-role="header" class="">
-        <a href="#mainPage" class="ui-btn ui-icon-delete ui-btn-icon-left" data-rel="back">Back</a>
-        <h1>Dormative - Settings</h1>
-    </div>
-    <div data-role="content" class="">
-        Settings to come
-    </div>
-</div>
-<div data-role="page" class="" id="addNewPage" data-add-back-btn="true" >
-    <div data-role="header" class="">
-        <a href="#mainPage" class="ui-btn ui-icon-delete ui-btn-icon-left" data-rel="back">Cancel</a>
-        <h1>Dormative - Add new task</h1>
-    </div>
-    <div data-role="content" class="">
-        <form>
-            <input type="number" name="tipPercentage" id="tipPercentage" value="" placeholder="Task name">
-            <p style="text-align: center;">
-                <a href="#" id='saveSettings' data-role="button" data-inline="true" data-icon="check">Save</a>
-            </p>
-        </form>
-    </div>
-</div>
-<div data-role="page" class="" id="showPage" data-add-back-btn="true" >
-    <div data-role="header" class="">
-        <a href="#mainPage" class="ui-btn ui-icon-delete ui-btn-icon-left" data-rel="back">Back</a>
-        <h1>Dormative - Show</h1>
-    </div>
-    <div data-role="content" class="">
 
-    </div>
+<div id="feed" data-role="page" data-title="Feed">
+  
+      <div data-role="header">
+            <h1>Todos</h1>
+      </div><!-- /header -->
+  
+      <div role="main" class="ui-content">
+            <h2>The current has to be done:</h2>
+            <ul data-role="listview" data-inset="true">
+              <li class="ui-li-has-thumb ui-first-child">
+                <a href="#category?animals" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <img src="img/profile.jpg">
+                  <h2>Take out the trash</h2>
+                  <p>Nikolai - ASAP</p>
+                </a>
+                <a href="#category?animals" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <img src="img/profile.jpg">
+                  <h2>Clean apartment</h2>
+                  <p>Espen - 3 days until deadline</p>
+                </a>
+                <a href="#category?animals" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <img src="img/profile.jpg">
+                  <h2>Buy toiletpaper</h2>
+                  <p>Christian - Next is Nikolai</p>
+                </a>
+              </li>
+            </ul>
+      </div><!-- /content -->
+
 </div>
-<script type="text/javascript" src="phonegap.js"></script>
-<script src="js/app.js"></script>
+
+<div id="animals" data-role="page" data-title="Animals">
+
+      <div data-role="header">
+      <h1>Animals</h1>
+      </div><!-- /header -->
+  
+      <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true">
+            </ul>
+      </div><!-- /content -->
+</div>
+
+<div id="colors" data-role="page" data-title="Colors">
+
+      <div data-role="header">
+      <h1>Colors</h1>
+      </div><!-- /header -->
+
+      <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true">
+            </ul>
+      </div><!-- /content -->
+
+</div>
+
+<div id="vehicles" data-role="page" data-title="Vehicles">
+
+      <div data-role="header">
+      <h1>Vehicles</h1>
+      </div><!-- /header -->
+  
+      <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true">
+            </ul>
+      </div><!-- /content -->
+
+</div>
+
+<!-- Underscore Template that is used to display all of the Category Models -->
+<script id="categoryItems" type="text/template">
+
+      <% _.each( collection.toJSON(), function( category, id ) { %>
+
+            <li class="ui-li-static">
+                  <%= category.type %>
+            </li>
+
+      <% }); %>
+
+</script>
+
 </body>
 </html>

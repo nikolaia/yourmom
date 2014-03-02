@@ -5,7 +5,7 @@
   "authors": [
     "Nikolai <nikolai@stasj.com>"
   ],
-  "directory" : "www/components",
+  "directory": "www/components",
   "license": "MIT",
   "private": true,
   "ignore": [
@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "backbone": "~1.1.2",
-    "requirejs": "~2.1.11"
+    "requirejs": "~2.1.11",
+    "jquery": "~1.10.0",
+    "jquery-mobile-bower": "1.4.1"
   }
 }
