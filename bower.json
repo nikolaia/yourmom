@@ -5,6 +5,7 @@
   "authors": [
     "Nikolai <nikolai@stasj.com>"
   ],
+  "directory" : "www/components",
   "license": "MIT",
   "private": true,
   "ignore": [

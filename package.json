@@ -18,6 +18,14 @@
   "homepage": "https://github.com/nikolaia/yourmom",
   "devDependencies": {
     "grunt": "^0.4.2",
-    "bower": "^1.2.8"
+    "bower": "^1.2.8",
+    "grunt-bower-task": "^0.3.4",
+    "grunt-mkdir": "^0.1.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-contrib-connect": "^0.7.1",
+    "grunt-cordovacli": "^0.3.4",
+    "grunt-bower-install": "^1.0.1"
   }
 }

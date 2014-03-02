@@ -1,5 +1,6 @@
 # Added by Nikolai
 bower_components/
+www/components/
 node_modules/
 plugins/
 platforms/
