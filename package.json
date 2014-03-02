@@ -1,13 +1,23 @@
 {
-  "name": "YourMom",
-  "version": "1.0.0",
+  "name": "yourmom",
+  "version": "0.0.0",
+  "description": "You' mom don't work here!",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nikolaia/yourmom.git"
+  },
+  "author": "Nikolaia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolaia/yourmom/issues"
+  },
+  "homepage": "https://github.com/nikolaia/yourmom",
   "devDependencies": {
     "grunt": "^0.4.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-mkdir": "~0.1.1",
-    "grunt-cordovacli": "~0.2.1",
-    "grunt-contrib-connect": "~0.5.0"
+    "bower": "^1.2.8"
   }
 }

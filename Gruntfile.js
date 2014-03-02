@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         ]
       }
     },
-    cordovacli: {
+    phonegap: {
       options: {
         path: './'
       },
@@ -86,18 +86,6 @@ module.exports = function(grunt) {
       build_android: {
         options: {
           command: 'build',
-          platforms: ['android']
-        }
-      },
-      prepare_ios: {
-        options: {
-          command: 'prepare',
-          platforms: ['ios']
-        }
-      },
-      prepare_android: {
-        options: {
-          command: 'prepare',
           platforms: ['android']
         }
       },
@@ -136,20 +124,14 @@ module.exports = function(grunt) {
   grunt.registerTask('init', 'Initialize the development environment.',[
     'clean',
     'mkdir',
-    'cordovacli:add_platforms',
-    'cordovacli:add_plugins',
+    'phonegap:add_platforms',
+    'phonegap:add_plugins',
     'update'
   ]);
  
-  grunt.registerTask('update', 'Update platforms.', [
-    'cordovacli:prepare_ios',
-    'cordovacli:prepare_android',
-    'copy'
-  ]);
- 
   grunt.registerTask('build', 'Build Platforms.', [
-    'cordovacli:build_ios',
-    'cordovacli:build_android',
+    'phonegap:build_ios',
+    'phonegap:build_android',
   ]);
  
   grunt.registerTask('server', ['connect:server']);
