@@ -1,0 +1,144 @@
+[
+    {
+        "Id": 1,
+        "Name": "Clean the House!",
+        "Description": "Please take the time to share the house",
+        "Actors": [
+            {
+                "Id": 1,
+                "User": {
+                    "Name": "antonello",
+                    "Email": "antonello@deveel.com",
+                    "EmailIsVerified": true,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                },
+                "Role": 1,
+                "CreatedOn": "2014-03-01T20:10:33.8777008Z",
+                "AssignedBy": null
+            },
+            {
+                "Id": 2,
+                "User": {
+                    "Name": "chris",
+                    "Email": "chris@awsomenet.com",
+                    "EmailIsVerified": false,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                },
+                "Role": 2,
+                "CreatedOn": "2014-03-01T20:10:33.8877008Z",
+                "AssignedBy": {
+                    "Name": "antonello",
+                    "Email": "antonello@deveel.com",
+                    "EmailIsVerified": true,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                }
+            },
+            {
+                "Id": 3,
+                "User": {
+                    "Name": "espen",
+                    "Email": "espen@gmail.com",
+                    "EmailIsVerified": false,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                },
+                "Role": 2,
+                "CreatedOn": "2014-03-01T20:10:34.2107008Z",
+                "AssignedBy": {
+                    "Name": "antonello",
+                    "Email": "antonello@deveel.com",
+                    "EmailIsVerified": true,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                }
+            }
+        ],
+        "IsCompleted": false
+    },
+    {
+        "Id": 2,
+        "Name": "Take out the trash",
+        "Description": "The trash is full, please take it out",
+        "Actors": [
+            {
+                "Id": 4,
+                "User": {
+                    "Name": "antonello",
+                    "Email": "antonello@deveel.com",
+                    "EmailIsVerified": true,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                },
+                "Role": 1,
+                "CreatedOn": "2014-03-01T20:10:34.2147008Z",
+                "AssignedBy": null
+            },
+            {
+                "Id": 5,
+                "User": {
+                    "Name": "chris",
+                    "Email": "chris@awsomenet.com",
+                    "EmailIsVerified": false,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                },
+                "Role": 2,
+                "CreatedOn": "2014-03-01T20:10:34.2237008Z",
+                "AssignedBy": {
+                    "Name": "antonello",
+                    "Email": "antonello@deveel.com",
+                    "EmailIsVerified": true,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                }
+            },
+            {
+                "Id": 6,
+                "User": {
+                    "Name": "espen",
+                    "Email": "espen@gmail.com",
+                    "EmailIsVerified": false,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                },
+                "Role": 2,
+                "CreatedOn": "2014-03-01T20:10:34.2337008Z",
+                "AssignedBy": {
+                    "Name": "antonello",
+                    "Email": "antonello@deveel.com",
+                    "EmailIsVerified": true,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                }
+            },
+            {
+                "Id": 7,
+                "User": {
+                    "Name": "frode",
+                    "Email": "frode@hotmail.com",
+                    "EmailIsVerified": false,
+                    "BirthDate": "0001-01-01T00:00:00",
+                    "CreateOn": "0001-01-01T00:00:00",
+                    "IsActive": true
+                },
+                "Role": 3,
+                "CreatedOn": "2014-03-01T20:10:34.2387008Z",
+                "AssignedBy": null
+            }
+        ],
+        "IsCompleted": true
+    }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "yourmom",
+  "version": "1.0.0",
+  "homepage": "https://github.com/nikolaia/yourmom",
+  "authors": [
+    "Nikolai <nikolai@stasj.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "requirejs": "~2.1.11"
+  }
+}
