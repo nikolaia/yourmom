@@ -60,7 +60,7 @@ module.exports = function(grunt) {
         options: {
           command: 'platform',
           action: 'add',
-          platforms: ['ios', 'android']
+          platforms: ['ios']
         }
       },
       add_plugins: {
@@ -143,7 +143,7 @@ module.exports = function(grunt) {
  
   grunt.registerTask('update', 'Update platforms.', [
     'cordovacli:prepare_ios',
-    'cordovacli:prepare_android',
+    //'cordovacli:prepare_android',
     'copy'
   ]);
  
